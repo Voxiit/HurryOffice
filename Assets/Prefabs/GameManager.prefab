@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2253233650600661875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2253233650600661873}
+  - component: {fileID: 2253233650600661874}
+  - component: {fileID: 2253233650600661872}
+  - component: {fileID: 2253233650600661839}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2253233650600661873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253233650600661875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2253233650600661874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253233650600661875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17f0937807a72e4db8be78ffa939dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _initializeLevel: {fileID: 2253233650600661872}
+  _coutdownManager: {fileID: 2253233650600661839}
+--- !u!114 &2253233650600661872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253233650600661875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdb5c43387c84843a74c5b52d40ba8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabOSAngularDesk:
+  - {fileID: 3662097166635489565, guid: d1bc16b2105ccb2439c9b9e582931b17, type: 3}
+  - {fileID: 7454207972475125353, guid: 52b176c2ff4a8504b9f6582fd08dfcae, type: 3}
+  - {fileID: 4222402468581563645, guid: cdaddb0ea942432449730b73936dc7b7, type: 3}
+  - {fileID: 529800931188458857, guid: 24a5c7f94e2dded47a195d50ab2fe061, type: 3}
+  - {fileID: 516876582617518796, guid: f4dafc0ae810a3f42a893ac7a0008688, type: 3}
+  - {fileID: 652233768658223296, guid: 16978b8cf74571242999a02c3b0e2f21, type: 3}
+  - {fileID: 2945574940900824996, guid: 7b1939a626967dd4788e18791e2b668d, type: 3}
+  - {fileID: 6604197963448849032, guid: bf788125c551e7845a57f6eb9f839b97, type: 3}
+  - {fileID: 8984294317058425484, guid: 30aa4e1bb0225c04183fc0cabf124c70, type: 3}
+  - {fileID: 641580024084324508, guid: e199a3059be965647835d26f59b17a2e, type: 3}
+  - {fileID: 4690751031694543290, guid: ab57765f23863a74aa1cacff5fe02d38, type: 3}
+  - {fileID: 2764121581999650379, guid: d621851a3616109469734211a255791b, type: 3}
+  _transformOSAngularDesk: {fileID: 0}
+  _prefabOSStandardDesk:
+  - {fileID: 1685318480529034884, guid: 1fd849aba29f2c74a9a92c13adc91e0f, type: 3}
+  - {fileID: 5727735141001645449, guid: 2cb367941f631954e83f5c45cc69c467, type: 3}
+  - {fileID: 6061604569117979783, guid: b5d18ee909f16f84fbd8bb8f99e04729, type: 3}
+  - {fileID: 8459461143551274443, guid: ebe396b55cc4a654d96d65d3ed4f0ca5, type: 3}
+  - {fileID: 8510478478005142326, guid: 21d0c7703be14954980307fed0a309ec, type: 3}
+  - {fileID: 1904163735204469740, guid: 1d5a28a7e14208241a0158d3f0032b95, type: 3}
+  - {fileID: 604186770050435100, guid: de0da645f15b2c54abe75a2053b745af, type: 3}
+  - {fileID: 2774768393745115719, guid: 5a397a42f281e964fb3b3921cce827ba, type: 3}
+  - {fileID: 695807705379059941, guid: 52bbda153448e3240893f74133c793a0, type: 3}
+  - {fileID: 1122986939417408839, guid: 7f53cc238dd6a7f449fe7bf543fff1e7, type: 3}
+  - {fileID: 6303509437591792734, guid: 5dc5260b1c2c3bf4c8d00690555866a9, type: 3}
+  - {fileID: 1110235901968262929, guid: 62b184d4147dedb4595572793dea442f, type: 3}
+  _transformOSStandardDesk: {fileID: 0}
+  _prefabLunchRoom:
+  - {fileID: 5140921789890551572, guid: 953bc049a9c9e05409f4d42b79e0a9e0, type: 3}
+  - {fileID: 7178469717250363265, guid: bfb1f0b71aaefff40a587d6eb0cf3d79, type: 3}
+  - {fileID: 8326070742805945257, guid: c86fd2456ebdb314586809c1df24b44b, type: 3}
+  - {fileID: 597607907821946802, guid: 341eb4592e8af7a4886e916631b66e83, type: 3}
+  - {fileID: 3358878886545105383, guid: 95b8c064fe955f24cb141843b2876e86, type: 3}
+  - {fileID: 4236199349848164908, guid: f6de1ee0804d96e468e6cc939845a66a, type: 3}
+  - {fileID: 8338858979977773387, guid: e648701cb5794ca4b9d4267ab00c420a, type: 3}
+  - {fileID: 3358309766080936599, guid: 444376fd3e74f1647a8df6ed50b02c3a, type: 3}
+  - {fileID: 7010197344810351232, guid: d6b81b90a0aec594ab25a8e5159378d5, type: 3}
+  - {fileID: 4692641038691968913, guid: 8d4c34d873ecf4747af0792252f5f343, type: 3}
+  _transformLunchRoom: {fileID: 0}
+  _prefabBRTables:
+  - {fileID: 980590316315106018, guid: 374b06129c47a3e46b2c087ae3d1e7e7, type: 3}
+  - {fileID: 4560626468045451132, guid: e7e2ac405883f274a9fe350104106bc8, type: 3}
+  - {fileID: 8858070952321784593, guid: 88c7a6ef339848e4b8993a5451f28df4, type: 3}
+  - {fileID: 3745875259807872047, guid: 600d7e91f4d4fbe449a9c80ace36955c, type: 3}
+  - {fileID: 5090384950817618970, guid: cb015affae83826449a4b4a0601d8b07, type: 3}
+  _transformBRTables: {fileID: 0}
+  _prefabBRTennisTables:
+  - {fileID: 2609058985733237162, guid: 822a2688f3b26674d8dffcfaeb445dbb, type: 3}
+  - {fileID: 5477801932348029281, guid: 1f0ef53cfa561154e9f9fc7b5e4bad19, type: 3}
+  - {fileID: 5958921549423475174, guid: e67e3ca7592b53047adaedde4bb8ba91, type: 3}
+  _transformBRTennisTables: {fileID: 0}
+  _prefabBRKitchen:
+  - {fileID: 8639074250279425552, guid: 9975f93cc2233ac459e8cd79f18792b9, type: 3}
+  - {fileID: 3132819426591796292, guid: d9a112dda97f00a4b90e7bde08e2ba27, type: 3}
+  - {fileID: 2277855508719574997, guid: 4e6a873b1438a164d8a25ceba00a3165, type: 3}
+  _transformBRKitchen: {fileID: 0}
+  _prefabBRCoffeeTables:
+  - {fileID: 3835978970097762362, guid: 814b1b6f775ed8a4f8a3ac26f433ffb6, type: 3}
+  - {fileID: 6933125260230874503, guid: ba2aa348836e503448af483bba320d13, type: 3}
+  - {fileID: 4700390365435509682, guid: 03d5270c8abc5614d8ea214a60529c2d, type: 3}
+  _transformBRCoffeeTables: {fileID: 0}
+  _prefabMRDesk:
+  - {fileID: 7477639763408334469, guid: f5971bcc4d89fb34e885d8efecc4dd5e, type: 3}
+  - {fileID: 8372303973737985011, guid: 95bbeaa876f5e094b8605e6d7279af6d, type: 3}
+  - {fileID: 734749979814473675, guid: ddaa9c02e427cc54bb53e9f1944a4d62, type: 3}
+  _transformMRDesk: {fileID: 0}
+  _prefabMRTables:
+  - {fileID: 693515091421517371, guid: 8628c33121bce58459090061e58852a7, type: 3}
+  - {fileID: 2380574720078572571, guid: 05ad9be17946ac94995163024dfedb14, type: 3}
+  - {fileID: 2336398560076273460, guid: 7c1860027987bb8439ab6e0cf7b0dc67, type: 3}
+  - {fileID: 748039138293574013, guid: 322de320fe6ffa9498f78b7193df3c5c, type: 3}
+  _transformMRTables: {fileID: 0}
+  _prefabECoffeeTables:
+  - {fileID: 4563626006897575056, guid: 76468ca4711277644ba5e994cea6fd46, type: 3}
+  - {fileID: 1447777351257852791, guid: 95f9c436da325e6498287ee26bfada4f, type: 3}
+  - {fileID: 2860867507662185079, guid: 9e50548e1243b224f9cdfb79c96c9feb, type: 3}
+  - {fileID: 8495367853884095610, guid: 068ed956fd593ff4a88e9cab7176063c, type: 3}
+  _transformECoffeeTables: {fileID: 0}
+  _prefabEOffice:
+  - {fileID: 1723319024867733751, guid: b9266d16a9ee6564e99f2bd8ee930f2b, type: 3}
+  - {fileID: 3107830556044332994, guid: 97547d07d8266c54288c6b2f07dbf150, type: 3}
+  - {fileID: 3200560626073601949, guid: 4fbefbb7879612949b3809746d4efe5d, type: 3}
+  _transformEOffice: {fileID: 0}
+  _prefabWRCoffeeTables:
+  - {fileID: 3401729600991266439, guid: bb52be5fb70afee41a829f8e078ee68b, type: 3}
+  - {fileID: 1992972792445105808, guid: dae65ddc608369f4db31ecb6f8b54978, type: 3}
+  - {fileID: 4444124526713130395, guid: 04842af01a1f6244b9a47846ece961f3, type: 3}
+  _transformWRCoffeeTables: {fileID: 0}
+  _prefabWRFloor:
+  - {fileID: 7751676794931659473, guid: f77fd2581f43f4547913ac72d866a67f, type: 3}
+  - {fileID: 8713745516789090956, guid: cdfc8c39904d58f45b585d61f1627ef8, type: 3}
+  - {fileID: 5473835343053604071, guid: 6a8eccc0e57a57a4095211e5c2386fdf, type: 3}
+  _transformWRFloor: {fileID: 0}
+  _prefabDOShelves:
+  - {fileID: 1674261889398662088, guid: f0619bd599ddeda4b9cb85262a2f47aa, type: 3}
+  - {fileID: 3281512798416181294, guid: 1b42c91c7f875914ebd93db5411d6f72, type: 3}
+  - {fileID: 6606068493766480443, guid: 4d868040a5f2d1a448e7ae4b034f43f1, type: 3}
+  - {fileID: 3341095281772700848, guid: 880f5cd636bc3d3409479df4b13b011c, type: 3}
+  - {fileID: 6942063078227406442, guid: fff82cb1682832340b8b4f7fd42dc05b, type: 3}
+  _transformDOShelves: {fileID: 0}
+  _prefabDODesk:
+  - {fileID: 2321538436825312074, guid: d09a22833588f98488e8a6c6fbce0e04, type: 3}
+  - {fileID: 2517568402586577261, guid: bc3c0d1cf59147c4894da30625633d84, type: 3}
+  - {fileID: 8677874669573660944, guid: 8a40a305fef0d08459767a2a97c197ba, type: 3}
+  _transformDODesk: {fileID: 0}
+  _prefabWC:
+  - {fileID: 6935935227780292756, guid: 3886b87d63a889445b25d9d8000e3700, type: 3}
+  - {fileID: 4806579557872452500, guid: 87d114736af5d454c814cc37529ed577, type: 3}
+  - {fileID: 2653732131961715671, guid: a72963b665d5ad94394ac70a4d35bd12, type: 3}
+  - {fileID: 7940196179973161031, guid: 2b57d9610f676ec47a1c09e67900351e, type: 3}
+  _transformWC: {fileID: 0}
+  _prefabWin: {fileID: 2382769690972267938, guid: 5f5c1357a84a35d46a0c04796ab9787e,
+    type: 3}
+  _transformWinList: {fileID: 0}
+--- !u!114 &2253233650600661839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253233650600661875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7debb3a308577f42aa0d673aa0aba98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startLevelCoutdown: 3
+  _levelCoutdown: 90
