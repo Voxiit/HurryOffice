@@ -20,10 +20,12 @@ public class GameManager : MonoBehaviour
     public static Action<bool> ShowResultUI;
     public static Action<bool> ShowExplanation1;
     public static Action<bool> ShowExplanation2;
+    public static Action<bool> ShowExplanation3;
     public static Action StopMusic;
 
     private bool _explanation1 = false;
     private bool _explanation2 = false;
+    private bool _explanation3 = false;
 
     //Functions
     void Awake()
@@ -39,21 +41,43 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && (!_explanation1 || !_explanation2))
+        if(Input.GetKeyDown(KeyCode.Space) && (!_explanation1 || !_explanation2 || !_explanation3))
         {
             if(!_explanation1)
             {
                 _explanation1 = true;
-                ShowExplanation1(false);
-                ShowExplanation2(true);
+                if(ShowExplanation1 != null)
+                {
+                    ShowExplanation1(false);
+                }
+
+                if(ShowExplanation2 != null)
+                {
+                    ShowExplanation2(true);
+                }
             }
             else if(!_explanation2)
             {
                 _explanation2 = true;
-                ShowExplanation2(false);
+                if (ShowExplanation2 != null)
+                {
+                    ShowExplanation2(false);
+                }
+
+                if(ShowExplanation3 != null)
+                {
+                    ShowExplanation3(true);
+                }
+            }
+            else if (!_explanation3)
+            {
+                _explanation3 = true;
+                if (ShowExplanation3 != null)
+                {
+                    ShowExplanation3(false);
+                }
                 _coutdownManager.StartCoutdown();
             }
-
         }
 
     }

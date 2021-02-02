@@ -21,6 +21,9 @@ public class UIManager : MonoBehaviour
     private Canvas _explanation2;
 
     [SerializeField]
+    private Canvas _explanation3;
+
+    [SerializeField]
     private TextMeshProUGUI _startText;
 
     [SerializeField]
@@ -58,6 +61,7 @@ public class UIManager : MonoBehaviour
         GameManager.ShowResultUI += ShowResultUI;
         GameManager.ShowExplanation1 += ShowExplanation1;
         GameManager.ShowExplanation2 += ShowExplanation2;
+        GameManager.ShowExplanation3 += ShowExplanation3;
         Grabber.PlayerWin += PlayerWin;
         ShowStartUI(true);
     }
@@ -144,4 +148,8 @@ public class UIManager : MonoBehaviour
         _explanation2.gameObject.SetActive(show);
     }
 
+    private void ShowExplanation3(bool show)
+    {
+        _explanation3.gameObject.SetActive(show);
+    }
 }

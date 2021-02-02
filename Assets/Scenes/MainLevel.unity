@@ -912,42 +912,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 635923263, guid: 62cdd70acc08d7041ae245c7ddef48b2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1009610994, guid: 62cdd70acc08d7041ae245c7ddef48b2, type: 3}
-      propertyPath: m_text
-      value: 'IN ORDER TO MOVE USE ZQSD KEYS
-
-
-        PRESS SPACEBAR TO JUMP
-
-
-        YOU
-        CAN PRESS LEFT CLICK TO GRAB LIGHT OBJECTS
-
-
-        PRESS LEFT CLICK AGAIN
-        TO LET THEM FALL ON THE FLOOR
-
-        PRESS RIGTH CLICK TO THROW THEM
-
-
-        PRESS
-        M TO PAUSE THE MUSIC
-
-
-        YOU HAVE TO GRAB YOUR PHONE TO FINISH THE
-        LEVEL
-
-
-        Press space bar to start'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936662620, guid: 62cdd70acc08d7041ae245c7ddef48b2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2948256292271288969, guid: 62cdd70acc08d7041ae245c7ddef48b2,
         type: 3}
       propertyPath: m_Name
@@ -5546,6 +5510,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &120650814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120650815}
+  - component: {fileID: 120650816}
+  m_Layer: 0
+  m_Name: WallCollider3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &120650815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120650814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.66, y: 1.5, z: 55.651}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &120650816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120650814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &122272113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8716,6 +8724,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &183457491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183457492}
+  - component: {fileID: 183457493}
+  m_Layer: 0
+  m_Name: WallCollider4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &183457492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183457491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.59, y: 1.5, z: 32.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &183457493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183457491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 3, z: 50}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &184583379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9623,6 +9675,10 @@ PrefabInstance:
     - target: {fileID: 1636076989802232, guid: 8d80648d25b493e429ab2eb1466089f8, type: 3}
       propertyPath: m_Name
       value: SM_Prop_WaterCooler_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636076989802232, guid: 8d80648d25b493e429ab2eb1466089f8, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
       objectReference: {fileID: 0}
     - target: {fileID: 4644980414342960, guid: 8d80648d25b493e429ab2eb1466089f8, type: 3}
       propertyPath: m_RootOrder
@@ -13287,6 +13343,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &284701719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284701720}
+  - component: {fileID: 284701721}
+  m_Layer: 0
+  m_Name: WallCollider2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &284701720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284701719}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.64, y: 1.5, z: 50.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &284701721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284701719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 3, z: 6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &285815744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14043,6 +14143,10 @@ PrefabInstance:
     - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
       objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
@@ -16664,6 +16768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
+      objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -16738,6 +16846,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &371551457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371551458}
+  - component: {fileID: 371551459}
+  m_Layer: 0
+  m_Name: CeilingCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371551458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371551457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 27.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &371551459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371551457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40, y: 4, z: 80}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &372312159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18384,6 +18536,10 @@ PrefabInstance:
     - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Chair_09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
       objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
@@ -26418,6 +26574,10 @@ PrefabInstance:
     - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
       objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
@@ -36093,6 +36253,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 617014741}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &819501992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 819501993}
+  - component: {fileID: 819501994}
+  m_Layer: 0
+  m_Name: WallCollider1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &819501993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819501992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.576, y: 1.5, z: 43.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &819501994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819501992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 12}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &820135501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36587,6 +36791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
+      objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -36661,6 +36869,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &828989167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 828989168}
+  - component: {fileID: 828989169}
+  m_Layer: 0
+  m_Name: WallCollider7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &828989168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828989167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.46, y: 1.5, z: -2.039}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &828989169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828989167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &830159171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40050,6 +40302,10 @@ PrefabInstance:
     - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
       objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
@@ -44832,6 +45088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
+      objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -47591,6 +47851,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1073375969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073375970}
+  - component: {fileID: 1073375971}
+  m_Layer: 0
+  m_Name: WallCollider10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1073375970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073375969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.09, y: 1.5, z: 28.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1073375971
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073375969}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 3, z: 2.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1073759151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52548,6 +52852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
+      objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -54447,6 +54755,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1220485809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220485810}
+  - component: {fileID: 1220485811}
+  m_Layer: 0
+  m_Name: WallCollider11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1220485810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220485809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.25, y: 1.5, z: 25.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1220485811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220485809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.5, y: 3, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1224386270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65492,6 +65844,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1487597201}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1489134420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1489134421}
+  - component: {fileID: 1489134422}
+  m_Layer: 0
+  m_Name: WallCollider8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1489134421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489134420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.15, y: 1.5, z: 19.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1489134422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489134420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 3, z: 40}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1491178208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69534,6 +69930,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1591497136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1591497137}
+  - component: {fileID: 1591497138}
+  m_Layer: 0
+  m_Name: WallCollider5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1591497137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591497136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.08, y: 1.5, z: 35.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1591497138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591497136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1593955764
 GameObject:
   m_ObjectHideFlags: 0
@@ -73507,6 +73947,50 @@ Transform:
   m_Father: {fileID: 637093464}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1679792865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1679792866}
+  - component: {fileID: 1679792867}
+  m_Layer: 0
+  m_Name: WallCollider12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1679792866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679792865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.25, y: 1.5, z: 16.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1679792867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679792865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.5, y: 3, z: 7.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1684132371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76420,6 +76904,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1746245230}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1747731495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747731496}
+  - component: {fileID: 1747731497}
+  m_Layer: 0
+  m_Name: WallCollider9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747731496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747731495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.09, y: 1.5, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1747731497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747731495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 3, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1749517529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83110,6 +83638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
+      objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -83946,6 +84478,50 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1923033577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923033578}
+  - component: {fileID: 1923033579}
+  m_Layer: 0
+  m_Name: WallCollider6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923033578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923033577}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.69, y: 1.5, z: 4.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093066105}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1923033579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923033577}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1923076522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87138,6 +87714,10 @@ PrefabInstance:
     - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
       objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
@@ -91384,6 +91964,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1877786139}
+  - {fileID: 371551458}
+  - {fileID: 819501993}
+  - {fileID: 284701720}
+  - {fileID: 120650815}
+  - {fileID: 183457492}
+  - {fileID: 1591497137}
+  - {fileID: 1923033578}
+  - {fileID: 828989168}
+  - {fileID: 1489134421}
+  - {fileID: 1747731496}
+  - {fileID: 1073375970}
+  - {fileID: 1220485810}
+  - {fileID: 1679792866}
   m_Father: {fileID: 620160224}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -92956,6 +93549,10 @@ PrefabInstance:
     - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Chair_09 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764144778791446, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
+      propertyPath: m_TagString
+      value: Grabable Object
       objectReference: {fileID: 0}
     - target: {fileID: 4832846531654218, guid: 3250b357f6aee8949a2aaaf6c2e39648, type: 3}
       propertyPath: m_RootOrder
