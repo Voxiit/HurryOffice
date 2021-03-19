@@ -50,10 +50,12 @@ public class PlayerController : MonoBehaviour
 
         //We will lock the cursor for the sake of my sanity
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         //Subscribe to the coutdown manager action
         CoutdownManager.ChangePlayerMoveStatus += SetPlayerCanMove;
         Grabber.PlayerWin += PlayerWin;
+        GameManager.Pause += Pause;
     }
 
     //Update functions
@@ -137,5 +139,10 @@ public class PlayerController : MonoBehaviour
     private void PlayerWin()
     {
         _playerCanMove = false;
+    }
+
+    private void Pause(bool b)
+    {
+        _playerCanMove = !b;
     }
 }

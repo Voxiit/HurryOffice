@@ -22,11 +22,14 @@ public class GameManager : MonoBehaviour
     public static Action<bool> ShowExplanation2;
     public static Action<bool> ShowExplanation3;
     public static Action StopMusic;
+    public static Action<bool> Pause;
 
     private bool _explanation1 = false;
     private bool _explanation2 = false;
     private bool _explanation3 = false;
 
+    private bool _isPaused = false;
+    
     //Functions
     void Awake()
     {
@@ -41,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        //Begin
         if(Input.GetKeyDown(KeyCode.Space) && (!_explanation1 || !_explanation2 || !_explanation3))
         {
             if(!_explanation1)
@@ -80,6 +84,30 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        //Pause menu
+        else if(Input.GetKeyDown(KeyCode.Escape) && _explanation1 && _explanation2 && _explanation3)
+        {
+            if(_isPaused)
+            {
+                _isPaused = false;
+                if(Pause != null)
+                {
+                    Pause(false);
+                }
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                _isPaused = true;
+                if (Pause != null)
+                {
+                    Pause(true);
+                }
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+            }
+        }
     }
 
     //The two following functions are made for the buttons
@@ -103,5 +131,14 @@ public class GameManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void Resume()
+    {
+        _isPaused = false;
+        if (Pause != null)
+        {
+            Pause(false);
+        }
     }
 }

@@ -15,15 +15,6 @@ public class UIManager : MonoBehaviour
     private Image _startImage;
 
     [SerializeField]
-    private Canvas _explanation1;
-
-    [SerializeField]
-    private Canvas _explanation2;
-
-    [SerializeField]
-    private Canvas _explanation3;
-
-    [SerializeField]
     private TextMeshProUGUI _startText;
 
     [SerializeField]
@@ -33,18 +24,43 @@ public class UIManager : MonoBehaviour
     private TextMeshProUGUI _timerText;
 
     [SerializeField]
-    private Image _resultImage;
+    private Image _arrowSecondsImage;
 
     [SerializeField]
-    private Canvas _restartQuitCanvas;
+    private Canvas _background;
 
     [SerializeField]
-    private Canvas _winCanvas;
+    private Canvas _noteblock;
 
     [SerializeField]
-    private Canvas _looseCanvas;
+    private Canvas _explanation1;
+
+    [SerializeField]
+    private Canvas _explanation2;
+
+    [SerializeField]
+    private Canvas _explanation3;
+
+    [SerializeField]
+    private Canvas _pauseRestartQuitCanvas;
+
+    [SerializeField]
+    private Image _pauseRestartQuitImage;
+
+    [SerializeField]
+    private Sprite _pauseSprite;
+
+    [SerializeField]
+    private Sprite _winSprite;
+
+    [SerializeField]
+    private Sprite _looseSprite;
+
+    [SerializeField]
+    private Image _missingHolderCanvas;
 
     //Values
+    private int _totalTime = 90;
 
     // Start is called before the first frame update
     void Awake()
@@ -58,11 +74,13 @@ public class UIManager : MonoBehaviour
         CoutdownManager.ShowTimerUI += ShowTimerUI;
         CoutdownManager.UpdateTimerText += UpdateTimer;
         CoutdownManager.PlayerLoose += PlayerLooseUI;
+        CoutdownManager.GetCoutdown += GetTotalTime;
         GameManager.ShowResultUI += ShowResultUI;
         GameManager.ShowExplanation1 += ShowExplanation1;
         GameManager.ShowExplanation2 += ShowExplanation2;
         GameManager.ShowExplanation3 += ShowExplanation3;
         Grabber.PlayerWin += PlayerWin;
+        GameManager.Pause += ShowPause;
         ShowStartUI(true);
     }
 
@@ -98,36 +116,47 @@ public class UIManager : MonoBehaviour
 
         //Update the text
         _timerText.text = seconds < 10 ? "0" + seconds + " :" + miliseconds : seconds + " :" + miliseconds;
+
+        //Update second clock
+        float secondsPassed = _totalTime - currentTime;
+        Quaternion currentRot = _arrowSecondsImage.rectTransform.rotation;
+        currentRot.eulerAngles = new Vector3(0, 0, -6 * secondsPassed);
+        _arrowSecondsImage.rectTransform.rotation = currentRot;
     }
 
     private void ShowTimerUI(bool show)
     {
         _timerImage.gameObject.SetActive(show);
         _timerText.gameObject.SetActive(show);
+        _arrowSecondsImage.gameObject.SetActive(show);
+        _missingHolderCanvas.gameObject.SetActive(show);
     }
 
     //Result function
     private void PlayerWinUi()
     {
         ShowResultUI(true);
-        _looseCanvas.gameObject.SetActive(false);
-        _winCanvas.gameObject.SetActive(true);
+
+        _pauseRestartQuitImage.sprite = _winSprite;
     }
 
     private void PlayerLooseUI()
     {
         ShowResultUI(true);
-        _looseCanvas.gameObject.SetActive(true);
-        _winCanvas.gameObject.SetActive(false);
+        _pauseRestartQuitImage.sprite = _looseSprite;
     }
 
     private void ShowResultUI(bool show)
     {
         //We unlock the mouse
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
 
-        _resultImage.gameObject.SetActive(show);
-        _restartQuitCanvas.gameObject.SetActive(show);
+
+        _background.gameObject.SetActive(show);
+        _pauseRestartQuitCanvas.gameObject.SetActive(show);
+        _pauseRestartQuitImage.gameObject.SetActive(show);
+        _missingHolderCanvas.gameObject.SetActive(!show);
     }
 
     //Player win
@@ -140,16 +169,38 @@ public class UIManager : MonoBehaviour
     //Explanation Canvas
     private void ShowExplanation1(bool show)
     {
+        _background.gameObject.SetActive(show);
+        _noteblock.gameObject.SetActive(show);
         _explanation1.gameObject.SetActive(show);
     }
 
     private void ShowExplanation2(bool show)
     {
+        _background.gameObject.SetActive(show);
+        _noteblock.gameObject.SetActive(show);
         _explanation2.gameObject.SetActive(show);
     }
 
     private void ShowExplanation3(bool show)
     {
+        _background.gameObject.SetActive(show);
+        _noteblock.gameObject.SetActive(show);
         _explanation3.gameObject.SetActive(show);
+    }
+
+    private void ShowPause(bool show)
+    {
+        ShowTimerUI(!show);
+        _background.gameObject.SetActive(show);
+        _missingHolderCanvas.gameObject.SetActive(!show);
+        _pauseRestartQuitCanvas.gameObject.SetActive(show);
+        _pauseRestartQuitImage.gameObject.SetActive(show);
+
+        _pauseRestartQuitImage.sprite = _pauseSprite;
+    }
+
+    private void GetTotalTime(float time)
+    {
+        _totalTime = (int)time;
     }
 }

@@ -28,6 +28,7 @@ public class CoutdownManager : MonoBehaviour
     public static Action<int> UpdateStartTimerText;
     public static Action<bool> ShowTimerUI;
     public static Action<float> UpdateTimerText;
+    public static Action<float> GetCoutdown;
     public static Action PlayerLoose;
     public static Action StartMusic;
 
@@ -35,6 +36,11 @@ public class CoutdownManager : MonoBehaviour
     private void Start()
     {
         Grabber.PlayerWin += PlayerWin;
+        GameManager.Pause += Pause;
+        if(GetCoutdown != null)
+        {
+            GetCoutdown(_levelCoutdown);
+        }
     }
 
     //Call by the game manager to indicate that the level can start now
@@ -141,5 +147,10 @@ public class CoutdownManager : MonoBehaviour
     private void PlayerWin()
     {
         _start = false;
+    }
+
+    private void Pause(bool b)
+    {
+        _start = !b;
     }
 }
